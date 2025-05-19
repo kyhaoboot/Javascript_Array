@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài Tập Buổi 16</title>
+    <!-- Flobite -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="w-full max-w-8xl mx-auto">
+        <!-- Tabs header -->
+        <div class="flex border-b border-gray-300">
+          <button
+            class="tab-button px-4 py-2 text-blue-600 border-b-2 border-blue-600 font-semibold"
+          >
+            Bài tập 1
+          </button>
+          <button
+            class="tab-button px-4 py-2 text-gray-600 hover:text-blue-600"
+          >
+            Bài tập 2
+          </button>
+          <button
+            class="tab-button px-4 py-2 text-gray-600 hover:text-blue-600"
+          >
+            Bài tập 3
+          </button>
+          <button
+            class="tab-button px-4 py-2 text-gray-600 hover:text-blue-600"
+          >
+            Bài tập 4
+          </button>
+        </div>
+        <div class="w-full max-w-2xl mx-auto pt-10 pb-10">
+          <label
+            for=""
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Nhập số n:</label
+          >
+          <input
+            type="number"
+            id="numberN"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            placeholder="Nhập số n"
+            required
+          />
+          <button
+            id="addNumber"
+            type="submit"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-20 px-2 py-3 text-center mt-4"
+            onclick="themSo()"
+          >
+            Thêm số
+          </button>
+        </div>
+        <div class="w-full max-w-2xl mx-auto bg-gray-600 text-white">
+          <!-- <ul id="mangHienTai"></ul> -->
+          <p id="mangHienTai"></p>
+        </div>
+        <!-- Tabs content -->
+        <div class="tab-content mt-4">
+          <div class="tab-panel w-full max-w-2xl mx-auto pt-10 pb-10">
+            <div class="w-full max-w-2xl mx-auto bg-gray-600 text-white">
+              <h1 class="text-center text-2xl">Tính Tổng Số Dương</h1>
+
+              <p class="text-center" id="tongSoDuong"></p>
+            </div>
+            <button
+              id="addNumber"
+              type="submit"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-20 px-2 py-3 text-center mt-4"
+              onclick="tongSoD()"
+            >
+              Tính tổng
+            </button>
+          </div>
+          <div class="tab-panel hidden w-full max-w-2xl mx-auto pt-10 pb-10">
+            <div class="w-full max-w-2xl mx-auto bg-gray-600 text-white">
+              <h1 class="text-center text-2xl">Đếm Số Dương</h1>
+
+              <p class="text-center" id="demSo"></p>
+            </div>
+            <button
+              id=""
+              type="submit"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-20 px-2 py-3 text-center mt-4"
+              onclick="demSoD()"
+            >
+              Đếm
+            </button>
+          </div>
+          <div class="tab-panel hidden w-full max-w-2xl mx-auto pt-10 pb-10">
+            <div class="w-full max-w-2xl mx-auto bg-gray-600 text-white">
+              <h1 class="text-center text-2xl">Tìm số nhỏ nhất</h1>
+
+              <p class="text-center" id="soMin"></p>
+            </div>
+            <button
+              id=""
+              type="submit"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-20 px-2 py-3 text-center mt-4"
+              onclick="timSoMin()"
+            >
+              Số nhỏ nhất
+            </button>
+          </div>
+          <div
+            class="tab-panel hidden w-full max-w-2xl mx-auto pt-10 pb-10"
+          ></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="text-center"></div>
+      </div>
+    </section>
+    <!-- Main JS  -->
+    <script src="main.js"></script>
+  </body>
+</html>
