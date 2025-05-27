@@ -38,6 +38,36 @@
           >
             Bài tập 4
           </button>
+          <button
+            class="tab-button px-4 py-2 text-gray-600 hover:text-blue-600"
+          >
+            Bài tập 5
+          </button>
+          <button
+            class="tab-button px-4 py-2 text-gray-600 hover:text-blue-600"
+          >
+            Bài tập 6
+          </button>
+          <button
+            class="tab-button px-4 py-2 text-gray-600 hover:text-blue-600"
+          >
+            Bài tập 7
+          </button>
+          <button
+            class="tab-button px-4 py-2 text-gray-600 hover:text-blue-600"
+          >
+            Bài tập 8
+          </button>
+          <button
+            class="tab-button px-4 py-2 text-gray-600 hover:text-blue-600"
+          >
+            Bài tập 9
+          </button>
+          <button
+            class="tab-button px-4 py-2 text-gray-600 hover:text-blue-600"
+          >
+            Bài tập 10
+          </button>
         </div>
         <div class="w-full max-w-2xl mx-auto pt-10 pb-10">
           <label
@@ -112,9 +142,124 @@
               Số nhỏ nhất
             </button>
           </div>
-          <div
-            class="tab-panel hidden w-full max-w-2xl mx-auto pt-10 pb-10"
-          ></div>
+          <div class="tab-panel hidden w-full max-w-2xl mx-auto pt-10 pb-10">
+            <div class="w-full max-w-2xl mx-auto bg-gray-600 text-white">
+              <h1 class="text-center text-2xl">Tìm số dương nhỏ nhất</h1>
+
+              <p class="text-center" id="soMinDuong"></p>
+            </div>
+            <button
+              id=""
+              type="submit"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-20 px-2 py-3 text-center mt-4"
+              onclick="timSoMinDuong()"
+            >
+              Số dương nhỏ nhất
+            </button>
+          </div>
+          <div class="tab-panel hidden w-full max-w-2xl mx-auto pt-10 pb-10">
+            <div class="w-full max-w-2xl mx-auto bg-gray-600 text-white">
+              <h1 class="text-center text-2xl">Tìm số chẵn cuối cuồi</h1>
+
+              <p class="text-center" id="soChan"></p>
+            </div>
+            <button
+              id=""
+              type="submit"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-20 px-2 py-3 text-center mt-4"
+              onclick="timSoChanCuoiCung(arr)"
+            >
+              Số chẵn cuối cùng
+            </button>
+          </div>
+          <div class="tab-panel hidden w-full max-w-2xl mx-auto pt-10 pb-10">
+            <div class="w-full max-w-2xl mx-auto bg-gray-600 text-white">
+              <h1 class="text-center text-2xl">Đổi chỗ</h1>
+              <input
+                type="number"
+                id="index1"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                placeholder="Nhập vị trí 1"
+                required
+              />
+              <input
+                type="number"
+                id="index2"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                placeholder="Nhập vị trí 2"
+                required
+              />
+              <p class="text-center" id="tb"></p>
+            </div>
+            <button
+              id=""
+              type="submit"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-20 px-2 py-3 text-center mt-4"
+              onclick="doiCho()"
+            >
+              Đổi Chỗ
+            </button>
+          </div>
+          <div class="tab-panel hidden w-full max-w-2xl mx-auto pt-10 pb-10">
+            <div class="w-full max-w-2xl mx-auto bg-gray-600 text-white">
+              <h1 class="text-center text-2xl">Sắp xếp tăng dần</h1>
+
+              <p class="text-center" id="tangdan"></p>
+            </div>
+            <button
+              id=""
+              type="submit"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-20 px-2 py-3 text-center mt-4"
+              onclick="sapXeptangDan(arr)"
+            >
+              Sắp xếp
+            </button>
+          </div>
+          <div class="tab-panel hidden w-full max-w-2xl mx-auto pt-10 pb-10">
+            <div class="w-full max-w-2xl mx-auto bg-gray-600 text-white">
+              <h1 class="text-center text-2xl">Tìm số nguyên tố đầu tiên</h1>
+
+              <p class="text-center" id="hienSoNTo"></p>
+            </div>
+            <button
+              id=""
+              type="submit"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-20 px-2 py-3 text-center mt-4"
+              onclick="timSoNguyenTo(arr)"
+            >
+              Số nguyên tố
+            </button>
+          </div>
+          <div class="tab-panel hidden w-full max-w-2xl mx-auto pt-10 pb-10">
+            <div class="w-full max-w-2xl mx-auto bg-gray-600 text-white">
+              <h1 class="text-center text-2xl">Đếm số nguyên</h1>
+
+              <p class="text-center" id="demSoN"></p>
+            </div>
+            <button
+              id=""
+              type="submit"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-20 px-2 py-3 text-center mt-4"
+              onclick="demSoNguyen(arr)"
+            >
+              Đếm số nguyên
+            </button>
+          </div>
+          <div class="tab-panel hidden w-full max-w-2xl mx-auto pt-10 pb-10">
+            <div class="w-full max-w-2xl mx-auto bg-gray-600 text-white">
+              <h1 class="text-center text-2xl">So sánh số âm dương</h1>
+
+              <p class="text-center" id="soSanh"></p>
+            </div>
+            <button
+              id=""
+              type="submit"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-20 px-2 py-3 text-center mt-4"
+              onclick="soSanhSoAmDuong(arr)"
+            >
+              So sánh
+            </button>
+          </div>
         </div>
       </div>
     </section>
